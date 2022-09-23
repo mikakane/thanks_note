@@ -24,6 +24,7 @@ import '@ionic/react/css/display.css'
 import './theme/variables.css'
 import './theme/style.css'
 import { AppPage } from './pages/app/app-page'
+import { NotFoundPage } from './pages/404/404Page'
 
 setupIonicReact()
 
@@ -33,6 +34,7 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/" component={Top}/>
         <Route path="/app" component={AppPage}/>
+        <Route component={NotFoundPage}/>
         {/* TODO ADD 404 route */}
       </IonRouterOutlet>
     </IonReactRouter>
