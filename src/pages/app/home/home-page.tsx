@@ -1,10 +1,10 @@
-import { IonContent, IonHeader, IonItem, IonLabel, IonList, IonTitle, IonToolbar } from '@ionic/react'
+import { IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from '@ionic/react'
 import React from 'react'
 
 export const HomePage: React.FC = () => {
   console.log("hoge")
   return (
-    <React.Fragment>
+    <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Tab Two</IonTitle>
@@ -21,6 +21,6 @@ export const HomePage: React.FC = () => {
           </IonList>
         </div>
       </IonContent>
-    </React.Fragment>
+    </IonPage>
   )
 }
