@@ -1,10 +1,10 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
 
-type Props = {
-    children: React.ReactNode
+interface Props {
+  children: React.ReactNode
 }
 
-export const TopPageLayout: React.FC<Props> = ({children}) => {
+export const TopPageLayout: React.FC<Props> = ({ children }) => {
   return (
     <IonPage>
       <IonHeader>
@@ -18,5 +18,5 @@ export const TopPageLayout: React.FC<Props> = ({children}) => {
         </div>
       </IonContent>
     </IonPage>
-  );
-};
+  )
+}

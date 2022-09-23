@@ -1,23 +1,19 @@
-import { IonButton, IonContent, IonHeader, IonInput, IonItem, IonItemDivider, IonLabel, IonList, IonPage, IonRouterOutlet, IonTabBar, IonTabs, IonTextarea, IonTitle, IonToolbar, useIonToast } from '@ionic/react';
-import React, { useState } from 'react';
-import { Route } from 'react-router';
-import { RouteComponentProps } from 'react-router-dom'
+import { IonButton, IonContent, IonHeader, IonItem, IonItemDivider, IonList, IonTextarea, IonTitle, IonToolbar, useIonToast } from '@ionic/react'
+import React, { useState } from 'react'
+import type { RouteComponentProps } from 'react-router-dom'
 
-interface Props extends RouteComponentProps{
-}
+type Props = RouteComponentProps
 
+export const SendPage: React.FC<Props> = ({ history }) => {
+  const [text, setText] = useState<string>()
+  const [,] = useState<number>()
 
-export const SendPage: React.FC<Props> = ({history}) => {
-
-  const [text, setText] = useState<string>();
-  const [number, setNumber] = useState<number>();
-
-  const [present, dismiss] = useIonToast();
+  const [present] = useIonToast()
 
   const onSubmit = () => {
-    console.log("hoge")
-    present('hello, message sent',1000)
-    history.push("/app/mypage")
+    console.log('hoge')
+    present('hello, message sent', 1000)
+    history.push('/app/mypage')
   }
 
   return (
@@ -39,6 +35,5 @@ export const SendPage: React.FC<Props> = ({history}) => {
         </div>
       </IonContent>
     </React.Fragment>
-  );
-};
-
+  )
+}

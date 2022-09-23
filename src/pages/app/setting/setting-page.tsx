@@ -1,16 +1,10 @@
-import { IonButton, IonCard, IonCardContent, IonContent, IonDatetime, IonHeader, IonIcon, IonInput, IonItem, IonItemDivider, IonLabel, IonList, IonPage, IonRouterOutlet, IonTabBar, IonTabs, IonTextarea, IonTitle, IonToolbar, useIonToast } from '@ionic/react';
-import { pin } from 'ionicons/icons';
-import React, { useState } from 'react';
-import { Route } from 'react-router';
-import { RouteComponentProps } from 'react-router-dom'
+import { IonContent, IonHeader, IonItem, IonLabel, IonList, IonTitle, IonToolbar } from '@ionic/react'
+import React from 'react'
+import type { RouteComponentProps } from 'react-router-dom'
 
-interface Props extends RouteComponentProps {
-}
+type Props = RouteComponentProps
 
-
-export const SettingPage: React.FC<Props> = ({ history }) => {
-
-
+export const SettingPage: React.FC<Props> = () => {
   return (
     <React.Fragment>
       <IonHeader>
@@ -41,6 +35,5 @@ export const SettingPage: React.FC<Props> = ({ history }) => {
         </div>
       </IonContent>
     </React.Fragment>
-  );
-};
-
+  )
+}

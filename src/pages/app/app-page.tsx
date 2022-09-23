@@ -1,12 +1,13 @@
-import { IonBadge, IonContent, IonHeader, IonIcon, IonLabel, IonPage, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar } from '@ionic/react';
-import { Route } from 'react-router';
-import { HomePage } from './home/home-page';
-//import ExploreContainer from '../components/ExploreContainer';
+import { IonIcon, IonLabel, IonPage, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react'
+import { apps, flash, send } from 'ionicons/icons'
+import { Route } from 'react-router'
+
+import { CalendarPage } from './calendar/calendar-page'
+import { HomePage } from './home/home-page'
+// import ExploreContainer from '../components/ExploreContainer';
 // import './Home.css';
-import { apps, flash, send } from 'ionicons/icons';
-import { SendPage } from './send/send-page';
-import { CalendarPage } from './calendar/calendar-page';
-import { SettingPage } from './setting/setting-page';
+import { SendPage } from './send/send-page'
+import { SettingPage } from './setting/setting-page'
 
 export const AppPage: React.FC = () => {
   return (
@@ -39,6 +40,5 @@ export const AppPage: React.FC = () => {
         </IonTabBar>
       </IonTabs>
     </IonPage>
-  );
-};
-
+  )
+}
