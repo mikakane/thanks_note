@@ -10,7 +10,7 @@ export const HomePage: React.FC = () => {
           <IonTitle>Tab Two</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent fullscreen>
         <div className="container">
           <IonList>
             <IonItem href="/tab2/details">
