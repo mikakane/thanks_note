@@ -2,6 +2,7 @@ import { IonContent, IonHeader, IonItem, IonLabel, IonList, IonTitle, IonToolbar
 import React from 'react'
 
 export const HomePage: React.FC = () => {
+  console.log("hoge")
   return (
     <React.Fragment>
       <IonHeader>
