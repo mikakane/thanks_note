@@ -1,6 +1,5 @@
-import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
 
-import { TopPageLayout } from '../../components/layout/toppage/TopPageLayout'
 // import ExploreContainer from '../components/ExploreContainer';
 // import './Home.css';
 
